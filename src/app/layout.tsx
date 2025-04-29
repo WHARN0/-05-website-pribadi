@@ -1,5 +1,14 @@
-import Layout from "./components/Layout";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
 import "./globals.css";
+import Layout from "./components/Layout";
+
+const inter = Inter({ subsets: ["latin"] });
+
+export const metadata: Metadata = {
+  title: "Website Pribadi",
+  description: "Website pribadi untuk menamnpilkan proyek dan esai.",
+};
 
 export default function RootLayout({
   children,
@@ -8,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className={inter.className}>
         <Layout>
           {children}
           </Layout>

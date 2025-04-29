@@ -9,12 +9,12 @@ type LayoutProps = {
 export default function Layout({ children }: LayoutProps) {
     return (
         <>
-        <head>
+        <Head>
             <link rel="icon" href="/favicon.ico" />
-        </head>
+        </Head>
         <Navbar/>
         <main>{children}</main>
-        <footer></footer>
+        <Footer/>
         </>
     );
 }

@@ -10,15 +10,15 @@ function FooterLink({ text, url }: FooterLinkProps) {
 
 export default function Footer() {
     return (
-        <footer className="flex justify-center mx-auto max-w-7x1 h-16 pt-6">
-            <nav>
-                <ul className="flex rounded-full bg-white/90 px-3 text-sm font-medium 
-                text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur">
-                    <li className="px-3 py-2"><FooterLink text="Tentang Saya" url="/" /></li>
-                    <li className="px-3 py-2"><FooterLink text="Proyek" url="/projects" /></li>
-                    <li className="px-3 py-2"><FooterLink text="Esai" url="/essays" /></li>
-                </ul>
-            </nav>
+        <footer className="pt-10 px-8 pb-16 border-t">
+            <div className="flex justify-between gap-6">
+                <div className="flex gap-6 text-sm font-medium text-zinc-600">
+                    <FooterLink text="Tentang Saya" url="/" />
+                    <FooterLink text="Proyek" url="/projects" />
+                    <FooterLink text="Esai" url="/essays" />
+                </div>
+                <p className="text-sm text-zinc-400">© 2025 Bagus Arnovario Wibowo. All rights reserved.</p>
+                </div>
         </footer>
     );
 }

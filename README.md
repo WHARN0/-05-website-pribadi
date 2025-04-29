@@ -76,3 +76,10 @@ Langkah-langkah:
 Lakukan hal yang sama untuk halaman projects/page.tsx dan essays/page.tsx.
 ![Screenshot](assets-report/Praktikum3(7).png)
 ![Screenshot](assets-report/Praktikum3(8).png)
+Mengakses Halaman : 
+o http://localhost:3000/ untuk halaman "Tentang Saya". 
+![Screenshot](assets-report/Praktikum3(9).png)
+o http://localhost:3000/projects untuk halaman "Proyek". 
+![Screenshot](assets-report/Praktikum3(10).png)
+o http://localhost:3000/essays untuk halaman "Esai".
+![Screenshot](assets-report/Praktikum3(11).png)
