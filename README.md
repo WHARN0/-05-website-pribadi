@@ -19,7 +19,7 @@ mkdir website-pribadi
 cd website-pribadi 
 3. Inisialisasi proyek Next.js dengan TypeScript dan App Router: 
 npx create-next-app@latest . --typescript –app 
-![Screenshot](assets-report/Praktikum1.png)
+![Screenshot](assets-report/Praktikum1(1-3).png)
 4. Cek konfigurasi postcss.config.mjs:
 ![Screenshot](assets-report/Praktikum1(4).png)
 5. Cek di app/globals.css, sudah ada import untuk tailwindcss:
@@ -42,3 +42,37 @@ Website pribadi akan memiliki tiga halaman:
 Langkah-langkah:
 
 1. Buat file app/page.tsx sebagai halaman "Tentang Saya":
+![Screenshot](assets-report/Praktikum2(1).png)
+2. Buat file app/projects/page.tsx sebagai halaman "Proyek": 
+![Screenshot](assets-report/Praktikum2(2).png)
+3. Buat file app/essays/page.tsx sebagai halaman "Esai": 
+![Screenshot](assets-report/Praktikum2(3).png)
+4. Buka browser dan akses: 
+o http://localhost:3000/ untuk halaman "Tentang Saya". 
+![Screenshot](assets-report/Praktikum2(4).png)
+o http://localhost:3000/projects untuk halaman "Proyek". 
+![Screenshot](assets-report/Praktikum2(5).png)
+o http://localhost:3000/essays untuk halaman "Esai".
+![Screenshot](assets-report/Praktikum2(6).png)
+
+## Praktikum 3 : Membuat Layout dan Navigasi
+
+Layout digunakan untuk menyediakan struktur yang konsisten di seluruh halaman, seperti navbar dan 
+footer.
+
+Langkah-langkah:
+
+1. Buat direktori src/components jika belum ada.
+2. Buat file src/components/Layout.tsx: 
+![Screenshot](assets-report/Praktikum3(1-2).png)
+3. Buat file src/components/Navbar.tsx 
+![Screenshot](assets-report/Praktikum3(3).png)
+4. Buat file src/components/Footer.tsx
+![Screenshot](assets-report/Praktikum3(4).png)
+5. Update file app/layout.tsx untuk menggunakan layout: 
+![Screenshot](assets-report/Praktikum3(5).png)
+6. Update setiap halaman menambahkan metadata dengan generateMetadata: 
+![Screenshot](assets-report/Praktikum3(6).png)
+Lakukan hal yang sama untuk halaman projects/page.tsx dan essays/page.tsx.
+![Screenshot](assets-report/Praktikum3(7).png)
+![Screenshot](assets-report/Praktikum3(8).png)
