@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Laporan Praktikum
 
-## Getting Started
+|       | Pemrograman Berbasis Framework 2025 |
+| ----- | ----------------------------------- |
+| NIM   | 2241720225                          |
+| Nama  | Bagus Arnovario Wibowo              |
+| Kelas | TI - 3A                             |
 
-First, run the development server:
+## Langkah-langkah Praktikum
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Praktikum 1 : Persiapan Lingkungan
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Pastikan Node.js dan npm sudah terinstal di komputer Anda. Anda dapat memeriksanya dengan 
+menjalankan perintah berikut di terminal atau command prompt: 
+node -v 
+npm -v 
+2. Buat direktori baru untuk proyek Next.js Anda: 
+mkdir website-pribadi 
+cd website-pribadi 
+3. Inisialisasi proyek Next.js dengan TypeScript dan App Router: 
+npx create-next-app@latest . --typescript –app 
+![Screenshot](assets-report/Praktikum1.png)
+4. Cek konfigurasi postcss.config.mjs:
+![Screenshot](assets-report/Praktikum1(4).png)
+5. Cek di app/globals.css, sudah ada import untuk tailwindcss:
+![Screenshot](assets-report/Praktikum1(5).png)
+6. Buka app/layout.tsx, tambahkan import './globals.css', dan modifikasi menjadi sebagai berikut:
+![Screenshot](assets-report/Praktikum1(6).png)
+7. Jalankan aplikasi Next.js: 
+    npm run dev 
+Aplikasi akan terbuka di browser pada alamat http://localhost:3000.
+![Screenshot](assets-report/Praktikum1(7).png)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Praktikum 2 : Membuat Halaman Website
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Website pribadi akan memiliki tiga halaman:
 
-## Learn More
+• Tentang Saya: Halaman berisi profil singkat dan link ke media sosial. 
+• Proyek: Halaman untuk menampilkan proyek-proyek yang telah diselesaikan. 
+• Esai: Halaman untuk menampilkan daftar artikel yang telah ditulis.
 
-To learn more about Next.js, take a look at the following resources:
+Langkah-langkah:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Buat file app/page.tsx sebagai halaman "Tentang Saya":
