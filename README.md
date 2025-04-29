@@ -83,3 +83,28 @@ o http://localhost:3000/projects untuk halaman "Proyek".
 ![Screenshot](assets-report/Praktikum3(10).png)
 o http://localhost:3000/essays untuk halaman "Esai".
 ![Screenshot](assets-report/Praktikum3(11).png)
+
+## Praktikum 4 : Halaman Proyek dengan Grid Responsif
+
+Halaman proyek akan menampilkan daftar proyek dalam bentuk grid yang responsif. 
+Langkah-langkah: 
+1. Buat folder di public/images. Kemudian tambahkan dua image, lalu rename dengan nama 
+project1.png dan project2.png
+![Screenshot](assets-report/Praktikum4(1).png)
+2. Modifikasi file app/projects/page.tsx:
+Buat card project item sebagai berikut:
+Modifikasi komponen project sebagai berikut:
+![Screenshot](assets-report/Praktikum4(2).png)
+3. Simpan file dan buka http://localhost:3000/projects di browser. Anda akan melihat daftar proyek 
+dalam grid yang responsif.
+![Screenshot](assets-report/Praktikum4(3).png)
+
+## Tugas 
+
+Eksplorasi Tailwindcss, kemudian. 
+1. Modifikasi halaman "Esai" dengan Grid daftar artikel yang telah ditulis.
+![Screenshot](assets-report/Tugas1.png)
+![Screenshot](assets-report/Tugas1(1).png)
+2. Modifikasi halaman “Tentang Saya” Buat tampilan yang menarik
+![Screenshot](assets-report/Tugas2.png)
+![Screenshot](assets-report/Tugas2(1).png)
